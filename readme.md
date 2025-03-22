@@ -23,7 +23,7 @@ My AI Topic Generator is a full-stack application that leverages AI to generate 
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/my-ai-topic-generator.git
+   git clone https://github.com/milaana1988/fb-ai-topic-generator
    cd my-ai-topic-generator
 
 2. **Install And Run Dependencies**
