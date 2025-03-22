@@ -11,19 +11,17 @@ dotenv.config();
 const app = express();
 
 app.use(
-  cors({ origin: "https://fb-ai-topic-generator-8307c3be0a46.herokuapp.com" }),
-  cors({ origin: "http://localhost:3000" })
+  cors({
+    origin: [
+      "https://fb-ai-topic-generator-8307c3be0a46.herokuapp.com",
+      "http://localhost:3000",
+    ],
+  })
 );
 
 app.use(bodyParser.json());
 
 const PORT = process.env.PORT || 8000;
-
-app.use(express.static(path.join(__dirname, "../..", "frontend", "dist")));
-
-app.get("*", (_, res) => {
-  res.sendFile(path.join(__dirname, "../..", "frontend", "dist", "index.html"));
-});
 
 mongoose
   .connect(process.env.MONGO_URI || "")
@@ -143,6 +141,11 @@ app.post(
   }
 );
 
+app.use(express.static(path.join(__dirname, "../..", "frontend", "dist")));
+
+app.get("*", (_, res) => {
+  res.sendFile(path.join(__dirname, "../..", "frontend", "dist", "index.html"));
+});
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
