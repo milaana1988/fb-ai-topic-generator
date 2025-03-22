@@ -10,7 +10,10 @@ dotenv.config();
 
 const app = express();
 
-app.use(cors({ origin: "http://localhost:3000" }));
+app.use(
+  cors({ origin: "https://fb-ai-topic-generator-8307c3be0a46.herokuapp.com" }),
+  cors({ origin: "http://localhost:3000" })
+);
 
 app.use(bodyParser.json());
 
