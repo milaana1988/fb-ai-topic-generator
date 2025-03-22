@@ -28,14 +28,14 @@ My AI Topic Generator is a full-stack application that leverages AI to generate 
 
 2. **Install And Run Dependencies**
 
-    - Install and run backend:
+- Install and run backend:
 
     ```bash
     cd backend
     npm install
     npm run dev
     
-    - Install and run frontend:
+- Install and run frontend:
 
     ```bash
     cd ../frontend
@@ -44,19 +44,19 @@ My AI Topic Generator is a full-stack application that leverages AI to generate 
 
 ## Configuration
 
-    Backend Configuration
+ - Backend Configuration
 
-    In the backend directory, create an .env file with the following environment variables (update the values as needed):
+ - In the backend directory, create an .env file with the following environment variables (update the values as needed):
 
-    ```dotenv
+    ```env
     MONGO_URI=your_mongodb_connection_string
     PORT=8000
 
-    Frontend Configuration
+- Frontend Configuration
 
-    In the frontend directory, create an .env file with any required variables:
+- In the frontend directory, create an .env file with any required variables:
 
-    ```dotenv
+    ```env
     VITE_OPENAI_API_KEY=your_openai_key
     VITE_BACKEND_URL=your_backend_url
 
