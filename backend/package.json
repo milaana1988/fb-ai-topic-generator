@@ -22,9 +22,7 @@
     "path": "^0.12.7",
     "process": "^0.11.10",
     "@types/node": "^22.13.11",
-    "typescript": "^5.8.2"
-  },
-  "devDependencies": {
+    "typescript": "^5.8.2",
     "@types/body-parser": "^1.19.5",
     "@types/cors": "^2.8.17",
     "@types/express": "^5.0.1",
