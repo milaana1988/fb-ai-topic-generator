@@ -313,10 +313,10 @@ const Home: React.FC = () => {
         <Box marginTop={4} display={"flex"} flexDirection={"column"} gap={4}>
           {showAnalytics && !loading && (
             <>
-              <Divider sx={{ marginY: 4, fontSize: 18 }}>
+              <Divider sx={{ marginY: 0, marginLeft: 0, fontSize: 18 }}>
                 <Chip
                   label="Analytics Dashboard"
-                  sx={{ fontSize: 25, padding: 5 }}
+                  sx={{ fontSize: 21, padding: 5 }}
                   color="secondary"
                 />
               </Divider>
