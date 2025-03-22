@@ -48,7 +48,7 @@ My AI Topic Generator is a full-stack application that leverages AI to generate 
 
     In the backend directory, create an .env file with the following environment variables (update the values as needed):
 
-    ```env
+    ```dotenv
     MONGO_URI=your_mongodb_connection_string
     PORT=8000
 
@@ -56,7 +56,7 @@ My AI Topic Generator is a full-stack application that leverages AI to generate 
 
     In the frontend directory, create an .env file with any required variables:
 
-    ```env
+    ```dotenv
     VITE_OPENAI_API_KEY=your_openai_key
     VITE_BACKEND_URL=your_backend_url
 
